@@ -1,22 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-my-button',
   templateUrl: './my-button.component.html',
   // use `styleUrls`: styles are not applied...
-  // styleUrls: ['./my-button.component.css'],
+  styleUrls: ['./my-button.component.css'],
   // use `styles`: red color applied
-  styles: [`
-    p {
-      color: red;
-    }
-  `],
+  // styles: [`
+  //   p {
+  //     color: red;
+  //   }
+  // `],
 })
-export class MyButtonComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class MyButtonComponent {
 }

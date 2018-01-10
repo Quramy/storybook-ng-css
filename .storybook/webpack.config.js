@@ -1,18 +1,5 @@
-// load the default config generator.
-const genDefaultConfig = require('@storybook/angular/dist/server/config/defaults/webpack.config.js');
+const applyStorybookDefaultConfig = require('@storybook/angular/dist/server/config/defaults/webpack.config');
+const { applyAngularCliConfig } = require('@quramy/storybook-angular-cli-helper');
 
-module.exports = (baseConfig, env) => {
-  const config = genDefaultConfig(baseConfig, env);
-
-  // Add .scss rule
-  config.module.rules.unshift({
-    test: /\.scss$/,
-    loaders: ['raw-loader', 'sass-loader'],
-  });
-
-  // Overwrite default .css rule
-  const cssRule = config.module.rules.find(rule => rule.test && rule.test.toString() === '/\\.css$/');
-  if (cssRule) cssRule.exclude = /\.component\.css$/;
-
-  return config;
-};
+module.exports = (baseConfig, env) =>
+  applyAngularCliConfig(applyStorybookDefaultConfig(baseConfig, env));

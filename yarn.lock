@@ -174,9 +174,9 @@
     source-map "^0.5.6"
     tree-kill "^1.0.0"
 
-"@quramy/storybook-angular-cli-helper@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@quramy/storybook-angular-cli-helper/-/storybook-angular-cli-helper-0.1.0.tgz#47368b9bdf14353ee280b93f785908e10c7130e7"
+"@quramy/storybook-angular-cli-helper@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@quramy/storybook-angular-cli-helper/-/storybook-angular-cli-helper-0.2.0.tgz#1af384fc69c48a83ad8ab60e260fae3c3c552ff6"
 
 "@schematics/angular@~0.1.0":
   version "0.1.11"

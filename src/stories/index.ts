@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/angular';
 import { ButtonWithCssComponent } from '../app/button-with-css/button-with-css.component';
 import { ButtonWithScssComponent } from '../app/button-with-scss/button-with-scss.component';
 import { ButtonWithGlobalComponent } from '../app/button-with-global/button-with-global.component';
+import { ButtonWithAssetComponent } from '../app/button-with-asset/button-with-asset.component';
 
 // storiesOf('My Button', module)
 //   .add('simple', () => ({
@@ -21,3 +22,8 @@ storiesOf('Styles', module)
     component: ButtonWithGlobalComponent,
   }))
   ;
+
+storiesOf('Assets', module)
+  .add('load', () => ({
+    component: ButtonWithAssetComponent,
+  }));
